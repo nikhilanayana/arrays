@@ -43,3 +43,55 @@ int main() {
     }
      printf("sum: %d",sum);
 }
+
+sum of 2x3x3 matrices
+#include<stdio.h>
+
+int main() {
+   int a[2][3][3] = {1,0,1,0,0,1,0,1,1,0,1,0,1,0,0,1,0,1};
+   int b[2][3][3] = {0,1,1,0,1,1,0,0,1,0,1,0,1,0,0,1,1,0};
+   int c[2][3][3],i,j,k;
+   for(i=0;i<2;++i) {
+       for(j=0;j<3;++j) {
+           for(k=0;k<3;k++) 
+           {
+               c[i][j][k] = a[i][j][k] + b[i][j][k];
+           }
+       }
+   }
+   for(i=0;i<2;++i) {
+       for(j=0;j<3;++j) {
+           for(k=0;k<3;k++) 
+           { printf("%d \n",c[i][j][k]);
+           }
+       }
+   }
+}
+
+sorting array of {22,'A',44,66}
+#include<stdio.h>
+
+int main() {
+   int a[4] = {23,'A',44,66};
+   int i,j,temp;
+   for(i=0;i<4;i++) {
+       printf("%d\t",a[i]);
+   }
+   for(i=0;i<4;i++) {
+       for(j=0;j<3;j++) {
+           if(a[j] > a[j+1])
+           {
+               temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+           }
+       }
+   }
+   printf("\nSorted array is...\n");
+    for (i = 0; i < 4; i++)
+    {
+        printf("%d\n", a[i]);
+    }
+}
+
+
