@@ -44,7 +44,7 @@ int main() {
      printf("sum: %d",sum);
 }
 
-sum of 2x3x3 matrices
+Sum of 2x3x3 matrices
 #include<stdio.h>
 
 int main() {
@@ -68,7 +68,7 @@ int main() {
    }
 }
 
-sorting array of {22,'A',44,66}
+Sorting array of {22,'A',44,66}
 #include<stdio.h>
 
 int main() {
