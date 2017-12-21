@@ -10,11 +10,13 @@ int main() {
     for(i=0;i<10;i++)
     {
         scanf("%d",&a[i]);
-        sum=sum+a[i];
         if(a[i]<0)
         {
+            printf("\nNegative");
             break;
         }
+        sum=sum+a[i];
+       
     }
      printf("sum: %d",sum);
 }
